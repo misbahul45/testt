@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="todo-app">
+    <h1>To-Do List</h1>
+    <p class="subtitle">Catat tugas dan selesaikan satu per satu.</p>
+
+    <form id="todo-form">
+      <input id="todo-input" type="text" placeholder="Tulis tugas baru..." autocomplete="off" required>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <div class="toolbar">
+      <span id="todo-count">0 tugas tersisa</span>
+      <button id="clear-completed" type="button">Hapus selesai</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+    <p id="empty-state">Belum ada tugas.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
